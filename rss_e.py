@@ -66,4 +66,24 @@ book.add_item(epub.EpubNav())
 book.spine = ['nav'] + all_chapters
 now = datetime.datetime.now()
 today = datetime.datetime.strftime(now, "%m_%d_%y-%H")
-epub.write_epub(f'news{today}.epub', book)
+epub_name = f"news{today}.epub"
+epub.write_epub(epub_name, book)
+
+
+import requests
+import os
+
+def send_telegram(epub_path):
+    token = os.getenv("TELEGRAM_TOKEN")
+    chat_id = os.getenv("TELEGRAM_CHAT_ID")
+
+    url = f"https://api.telegram.org/bot8792420560:AAGTKx_4mH4bNjxb4gAi8QRsM_CRosOdU3I/sendDocument"
+
+    with open(epub_path, "rb") as f:
+        requests.post(
+            url,
+            data={"chat_id": chat_id},
+            files={"document": f}
+        )
+
+send_telegram(epub_name)
