@@ -7,7 +7,7 @@ on:
     - cron: '30 6 * * *'
     - cron: '0 13 * * *'
     - cron: '0 18 * * *'
-    - cron: '21 22 * * *'
+    - cron: '23 22 * * *'
 
 jobs:
   build:
@@ -24,4 +24,4 @@ jobs:
       env:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      run: python rss.py
+      run: python rss_e.py
