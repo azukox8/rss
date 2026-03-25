@@ -15,7 +15,7 @@ jobs:
       run: pip install feedparser requests beautifulsoup4 ebooklib
 
     - name: Uruchom skrypt
-      run: python rss.py
+      run: python rss_e.py
 
     - name: Zapisz EPUB
       uses: actions/upload-artifact@v4
