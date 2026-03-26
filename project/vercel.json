@@ -1,9 +1,0 @@
-{
-  "crons": [
-    { "path": "/api/rss", "schedule": "30 7 * * *" },
-    { "path": "/api/rss", "schedule": "0 9 * * *" },
-    { "path": "/api/rss", "schedule": "0 11 * * *" },
-    { "path": "/api/rss", "schedule": "0 14 * * *" },
-    { "path": "/api/rss", "schedule": "0 19 * * *" }
-  ]
-}
