@@ -8,7 +8,8 @@ RSS_FEEDS = {
     "BBC news": "https://feeds.bbci.co.uk/polska/rss.xml",
     "Polsat News": "http://www.polsatnews.pl/rss/wszystkie.xml",
     "RMF": "http://www.rmf.fm/rss/rss.xml",
-    "WP": "http://wiadomosci.wp.pl/rss.xml"
+    "WP": "http://wiadomosci.wp.pl/rss.xml",
+    "ATI": "http://all-that-is-interesting.com/rss"
     
 }
 
